@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan Alifian | Social</title>
+  <link rel="stylesheet" href="../social/style.css">
+  <link rel="stylesheet" href="../library/style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #fff;
+      overflow-x: hidden;
+      background-image: url('../media/bg5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #ddd;
+    }
+
+    .disclaimer {
+      display: none
+    }
+
+    @font-face {
+      font-family: 'ftrearth';
+      src: url('../media/FutureEarth.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sranger';
+      src: url('../media/spaceranger.ttf') format('truetype');
+    }
+
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8rem 0 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- container -->
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <h2>Evan Alifian</h2>
+        </a>
+      </div>
+      
+      <ul class="navbar-list"
+      id="navbar-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about/index.html" class="nav-link">About</a></li>
+        <li><a href="../music/index.html" class="nav-link">Music</a></li>
+        <li><a href="../assignments/index.html" class="nav-link">Assignments</a></li>
+        <li><a href="../social/index.html" class="nav-link">Social</a></li>
+        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="navbar-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+    <!-- social -->
+    <div class="social" id="social">
+      <div class="social-title">
+        <h1>Social Media</h1>
+        <hr style="border-top: 4px solid seashell;">
+      </div>
+      <div class="social-text">
+        <p>Here's some my social media accounts and you can follow them.</p>
+      </div>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.instagram.com/evanalifian/" target="_blank">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg> Instagram
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://web.facebook.com/profile.php?id=100074264594248" target="_blank">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg> Facebook
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig" target="_blank">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="3" y="5" width="18" height="14" rx="4" />
+                <path d="M10 9l5 3l-5 3z" />
+              </svg> YouTube
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- end of social -->
+
+
+    <!-- footer -->
+    <footer id="footer" style="text-align: center; margin-bottom: 50px; cursor: default;">
+      <p style="color: whitesmoke; text-shadow: 0 1px 1px black;">&copy; 2022 Evan Alifian. All Rights Reserved</p>
+    </footer>
+    <!-- end of footer -->
+  </div>
+  <!-- end of container -->
+
+
+  <script src="../script.js"></script>
+  <script src="../library/script.js"></script>
+  <script>
+    $(window).scroll(function() {
+      $('.navbar').toggleClass('scroll', $(this).scrollTop()>50);
+    })
+  </script>
+</body>
+</html>

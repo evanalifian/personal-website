@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan Alifian | Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="library/style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      list-style: none;
+      text-decoration: none;
+      /* font-weight: lighter; */
+    }
+
+    body {
+      background-color: #fff;
+      overflow-x: hidden;
+      background-image: url('media/bg5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .disclaimer {
+      display: none
+    }
+
+    @font-face {
+      font-family: 'ftrearth';
+      src: url('media/FutureEarth.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sranger';
+      src: url('media/spaceranger.ttf') format('truetype');
+    }
+
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 9rem 0 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- container -->
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <h2>Evan Alifian</h2>
+        </a>
+      </div>
+      <ul class="navbar-list"
+      id="navbar-list">
+        <li><a href="about/index.html" class="nav-link">About</a></li>
+        <li><a href="music/index.html" class="nav-link">Music</a></li>
+        <li><a href="assignments/index.html" class="nav-link">Assignments</a></li>
+        <li><a href="social/index.html" class="nav-link">Social</a></li>
+        <li><a href="contact/index.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="navbar-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="header-welcoming" id="header-welcoming">
+        <div class="header-welcoming-title">
+          <h1>evan Alifian</h1>
+        </div>
+        <div class="header-welcoming-greating">
+          <p>Hi, welcome to my personal homepage. I'm a Student, Web Developer & Music Maker from Indonesia.</p>
+        </div>
+        <a href="https://youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig" target="_blank">Subscribe</a>
+      </div>
+      <div class="header-music">
+        <div class="header-music-title">
+          <h3>Latest Music Video on YouTube</h3>
+        </div>
+        <div class="header-iframe">
+          <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/yWgvRtMRU0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+
+    <!-- footer -->
+    <footer id="footer" style="text-align: center; margin-bottom: 50px; cursor: default;">
+      <p style="color: whitesmoke; text-shadow: 0 1px 1px black;">&copy; 2022 Evan Alifian. All Rights Reserved</p>
+    </footer>
+    <!-- end of footer -->
+  </div>
+  <!-- end of container -->
+
+
+  <script src="script.js"></script>
+  <script src="library/script.js"></script>
+  <script>
+    $(window).scroll(function() {
+      $('.navbar').toggleClass('scroll', $(this).scrollTop()>50);
+    })
+  </script>
+</body>
+</html>

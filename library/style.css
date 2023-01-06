@@ -1,0 +1,112 @@
+/* for home */
+.header, footer {
+  animation: homeIn .5s;
+  transform-origin: left;
+}
+
+@keyframes homeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* for music */
+footer, .about {
+  animation: aboutIn .5s;
+  transform-origin: left;
+}
+
+@keyframes aboutIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* for music */
+footer, .music {
+  animation: musicIn .5s;
+  transform-origin: left;
+}
+
+@keyframes musicIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* for social */
+footer, .social {
+  animation: socialIn .5s;
+  transform-origin: left;
+}
+
+@keyframes socialIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* for contact */
+footer, .contact {
+  animation: contactIn .5s;
+  transform-origin: left;
+}
+
+@keyframes contactIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* for assignments */
+footer, .assignments {
+  animation: assignmentsIn .5s;
+  transform-origin: left;
+}
+
+@keyframes assignmentsIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

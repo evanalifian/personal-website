@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan Alifian | About</title>
+  <link rel="stylesheet" href="../about/style.css">
+  <link rel="stylesheet" href="../library/style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #fff;
+      overflow-x: hidden;
+      background-image: url('../media/bg5.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #ddd;
+    }
+
+    .disclaimer {
+      display: none
+    }
+
+    @font-face {
+      font-family: 'ftrearth';
+      src: url('../media/FutureEarth.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sranger';
+      src: url('../media/spaceranger.ttf') format('truetype');
+    }
+
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8rem 0 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- container -->
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-brand">
+        <a href="../index.html">
+          <h2>Evan Alifian</h2>
+        </a>
+      </div>
+      
+      <ul class="navbar-list"
+      id="navbar-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about/index.html" class="nav-link">About</a></li>
+        <li><a href="../music/index.html" class="nav-link">Music</a></li>
+        <li><a href="../assignments/index.html" class="nav-link">Assignments</a></li>
+        <li><a href="../social/index.html" class="nav-link">Social</a></li>
+        <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="navbar-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+    <!-- about -->
+    <div class="about" id="about">
+      <div class="about-title">
+        <h1>About</h1>
+        <hr style="border-top: 4px solid seashell;">
+      </div>
+      <div class="about-paragraph">
+        <div class="about-paragraph-one">
+          <p><span class="brand">Evan Alifian</span> is a personal webpage built by <span class="name">Evan Rafa Radya Alifian</span>. This webpage contains Evan's music, assignments & his projects. Evan is from Indonesia and he studies at Vocational High School 2 Bangkalan, Madura and majoring Sofrware enginering.</p>
+          <img src="../media/me.jpg" alt="profile picture" width="180" style="border-radius: 50%; border: 6px solid darkslategrey;">
+        </div>
+        <div class="about-paragraph-two">
+          <div class="logo">
+            <img src="../media/Logo.jpg" alt="vandersn logo" width="180" style="border-radius: 50%; border: 6px solid darkslategrey;">
+          </div>
+          <div class="text">
+            <p>Evan has YouTube channel called <span>Vandersn</span>. There, he post a music video he has made. You can visit his YouTube channel by clicking this button</p>
+            <a href="https://youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig" target="_blank">Visit here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of about -->
+
+
+    <!-- footer -->
+    <footer id="footer" style="text-align: center; margin-bottom: 50px; cursor: default;">
+      <p style="color: whitesmoke; text-shadow: 0 1px 1px black;">&copy; 2022 Evan Alifian. All Rights Reserved</p>
+    </footer>
+    <!-- end of footer -->
+  </div>
+  <!-- end of container -->
+  
+
+  <script src="../script.js"></script>
+  <script src="../library/script.js"></script>
+  <script>
+    $(window).scroll(function() {
+      $('.navbar').toggleClass('scroll', $(this).scrollTop()>50);
+    })
+  </script>
+</body>
+</html>
